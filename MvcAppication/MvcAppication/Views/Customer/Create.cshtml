@@ -1,0 +1,78 @@
+﻿@using MvcAppication.Models
+@model CustomerModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm())
+{
+<div>
+    <ul>
+        <li>
+            @Html.DisplayNameFor(x => x.Id)
+        </li>
+        @Html.LabelFor(x => x.Id)
+        <li></li>
+    </ul>
+    <ul>
+        <li>
+            @Html.DisplayNameFor(x => x.EmailId)
+
+        </li>
+        <li>
+            @Html.EditorFor(x => x.EmailId)
+
+        </li>
+    </ul>
+    <ul>
+        <li>
+            @Html.DisplayNameFor(x => x.Name)
+        </li>
+        <li>
+            @Html.EditorFor(x => x.Name)
+
+        </li>
+    </ul>
+    <ul>
+        <li>
+            @Html.DisplayNameFor(x => x.PhoneNumber)
+        </li>
+        <li>
+            @Html.EditorFor(x => x.PhoneNumber)
+
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            @Html.DisplayNameFor(x => x.FirstName)
+        </li>
+        <li>
+            @Html.EditorFor(x => x.FirstName)
+
+        </li>
+    </ul>
+    <ul>
+        <li>
+            @Html.DisplayNameFor(x => x.LastName)
+        </li>
+        <li>
+            @Html.EditorFor(x => x.LastName)
+
+        </li>
+    </ul>
+    <ul>
+        <li>
+            @Html.DisplayNameFor(x => x.AddressPhone)
+        </li>
+        <li>
+            @Html.EditorFor(x => x.AddressPhone)
+
+        </li>
+    </ul>
+    <input type="submit" value="submit"/>
+</div>
+}
+

@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="Create" method="post">
+    <div>
+        <ul>
+            <li>
+                <span>Name</span>
+                <input type="text" id="name" name="name"/>
+            </li>
+            <li>
+                <span>EmailId</span>
+                <input type="text" id="emailId" name="emaiId"/>
+            </li>
+            <li>
+                <span>PhoneNumber</span>
+                <input type="number" id="phonenumber" name="phonenumber" />
+            </li>
+            <li>
+                <span>Gender</span>
+                <input type="radio" id="radio" name="radio" value="Male" />
+                <input type="radio" id="radiofemale" name="radio" value="Female" />
+            </li>
+
+            <li><input type="submit"/></li>
+        </ul>
+    </div>
+</form>

@@ -1,0 +1,15 @@
+﻿@using MvcAppication.Models
+
+<h2>Edit</h2>
+@*@using (Html.BeginForm())
+{*@
+    @*@Html.EditorFor(x=>x.EmailId)*@
+<form action="Edit" method="post">
+    <input type="text" value="@Model.EmailId" name="EmailId"/>
+    <input type="text" value="@Model.Name" name="Name"/>
+
+    <input type="text" value="@Model.PhoneNumber" name="PhoneNumber"/>
+
+    <input type="submit" />
+</form>
+

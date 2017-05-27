@@ -1,0 +1,36 @@
+﻿@using MvcAppication.Models
+@model AddressModel
+@{
+    ViewBag.Title = "Addresses";
+}
+
+<h2>Addresses</h2>
+<table>
+    <thead><tr>
+    <th>
+        ID
+    </th>
+    <th>
+        FirstName
+    </th>
+    <th>
+        LastName
+    </th>
+    <th>
+        PhoneNumber
+    </th>
+</tr>
+    </thead>
+@foreach (var item in Model.addresses)
+{
+    <tbody>
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.PhoneNumber</td>           
+        </tr>
+    </tbody>
+}
+</table>
+

@@ -1,0 +1,31 @@
+﻿@using MvcAppication.Models
+
+<a href="@Url.Action("Create", "Home")">Create new user</a>
+
+
+    <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>EmailId</th>
+            <th>PhoneNumber</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.EmailId</td>
+                <td>@item.PhoneNumber</td>    
+                <td><a href="/Home/Edit?id=@item.Id">Edit</a></td>  
+                <td><a href="/Home/Delete?id=@item.Id">Delete</a></td>                          
+            </tr>
+        </tbody>
+    }
+</table>
+
+
+

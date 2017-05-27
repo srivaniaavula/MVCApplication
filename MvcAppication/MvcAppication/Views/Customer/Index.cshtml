@@ -1,0 +1,40 @@
+﻿@using MvcAppication.Models
+@model IList<CustomerModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+    @Html.ActionLink("Create new user", "Create", "Customer")
+    <table>
+        <thead><tr>
+            <th>
+                Id
+            </th>
+                   <th>
+                       EmailId
+                   </th>
+                   <th>
+                       Name
+                   </th>
+                   <th>
+                       PhoneNumber
+                   </th>
+            </tr></thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.EmailId</td>
+                    <td>@item.PhoneNumber</td>
+                    <td><a href="@Url.Action("Edit","Customer",new { id=item.Id})">Edit</a></td>
+                    <td><a href="@Url.Action("Edit","Customer",new { id=item.Id})">Delete</a></td>
+                    <td><a href="@Url.Action("Addresses","Customer",new { customerId=item.Id})">Get Addresses</a></td>
+                </tr>
+            </tbody>
+        }
+        
+    </table>
+    

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppication", "MvcAppication\MvcAppication.csproj", "{613618D8-8EAF-42F3-A76A-9E83238E9FDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{613618D8-8EAF-42F3-A76A-9E83238E9FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613618D8-8EAF-42F3-A76A-9E83238E9FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613618D8-8EAF-42F3-A76A-9E83238E9FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613618D8-8EAF-42F3-A76A-9E83238E9FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsnaveen.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MvcAppication\\MvcAppication.csproj
+		SccProjectName1 = MvcAppication
+		SccLocalPath1 = MvcAppication
+	EndGlobalSection
+EndGlobal
